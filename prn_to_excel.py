@@ -456,14 +456,11 @@ def write_sheet(ws, data, summary_format="proportion_correct"):
         r = x_data_start + i
         time_sec, prefix, short, label = decode_x_value(raw_val)
 
-        w(r, 2, idx / 24.0)   # time as fraction of day
+        w(r, 2, f"{idx}:00")   
         w(r, 3, raw_val)       # raw X value
         if short:
             w(r, 4, int(short) if short.isdigit() else short)
         w(r, 5, label)
-        if prefix is not None:
-            w(r, 6, prefix * 10000 if prefix <= 999 else prefix * 10)
-        w(r, 7, time_sec if time_sec != raw_val else "")
 
 
 # ── Main entry point ─────────────────────────────────────────────────────────
