@@ -14,7 +14,7 @@ import openpyxl
 from prn_to_excel import prn_to_excel, parse_prn
 
 SUMMARY_FORMATS = {
-    "Proportion Correct  —  L/C/R food counts + single overall proportion": "proportion_correct",
+    "Proportion Correct  —  L/C/R food counts + proportion of correct": "proportion_correct",
     "Three Proportions   —  per-side trial counts + L, C, R proportions": "three_proportions",
 }
 
