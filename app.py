@@ -11,7 +11,7 @@ import tempfile
 import os
 import io
 import openpyxl
-from prn_to_excel import prn_to_excel, parse_prn, format_date, format_time
+from prn_to_excel import prn_to_excel, parse_prn
 
 SUMMARY_FORMATS = {
     "Proportion Correct  —  L/C/R food counts + single overall proportion": "proportion_correct",
